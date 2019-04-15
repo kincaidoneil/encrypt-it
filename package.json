@@ -1,7 +1,7 @@
 {
-  "name": "encrypt-it",
+  "name": "symmetric-encrypt",
   "version": "1.0.0",
-  "description": "Secure encryption and decryption",
+  "description": "Password-based encryption and decryption",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
@@ -21,9 +21,7 @@
   "keywords": [
     "encrypt",
     "decrypt",
-    "file",
     "password",
-    "save",
     "aes",
     "argon2",
     "pbkdf2",

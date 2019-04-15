@@ -1,6 +1,6 @@
-# encrypt-it
+# symmetric-encrypt
 
-> Secure encryption and decryption in Node.js
+> Password-based encryption and decryption in Node.js
 
 - Encrypt and decrypt data using a password
 - AES-GCM for fast and secure symmetric encryption
@@ -8,10 +8,18 @@
 - Portable function parameters for encryption and key derivation, encoded in the output for backwards compatibility
 - Designed to use with a separate persistence layer
 
+### Instal
+
+```bash
+npm install symmetric-encrypt
+```
+
+Requires Node.js 10+.
+
 ### Usage
 
 ```js
-const { generateEncryptionKey, decrypt } = require('encrypt-it')
+const { generateEncryptionKey, decrypt } = require('symmetric-encrypt')
 
 async function run() {
   /**
