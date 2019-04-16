@@ -132,7 +132,7 @@ export const decrypt = async (
   return decipher.update(ciphertext, 'base64', 'utf8') + decipher.final('utf8')
 }
 
-interface EncryptedConfig {
+export interface EncryptedConfig {
   /** Encrypted text, base64 encoded */
   readonly ciphertext: string
 

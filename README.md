@@ -2,13 +2,13 @@
 
 > Password-based encryption and decryption in Node.js
 
-- Encrypt and decrypt data using a password
 - AES-GCM for fast and secure symmetric encryption
-- Argon2Id for high work-factor and ASIC-resistant key derivation, using Libsodium compiled to WASM
+- Argon2Id for high work-factor and ASIC-resistant key derivation, using a Libsodium WASM implementation
 - Portable function parameters for encryption and key derivation, encoded in the output for backwards compatibility
-- Designed to use with a separate persistence layer
+- Best practices such as salting, regenerating IVs for each new message, and using auth tags to enforce integrity
+- Simple API, designed to use with a separate persistence layer
 
-### Instal
+### Install
 
 ```bash
 npm install symmetric-encrypt
@@ -26,7 +26,7 @@ async function run() {
    * The key only needs to be generated once per session, so
    * `encrypt` can be called multiple times with different messages
    */
-  const encrypt = await generateEncryptionKey('this is a password')
+  const encrypt = await generateEncryptionKey('some password')
   const encryptedConfig = await encrypt('this is the message')
 
   /**
@@ -35,8 +35,8 @@ async function run() {
    * be opened and parsed as JSON, to be decrypted.
    */
 
-  const message = await decrypt('this is a password', encryptedConfig)
-  console.log(message) // -> "this is a message"
+  const message = await decrypt('some password', encryptedConfig)
+  console.log(message) // -> "this is the message"
 }
 
 run().catch(err => console.error(err))

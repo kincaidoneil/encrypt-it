@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kincaidoneil/encrypt-it.git"
+    "url": "git+https://github.com/kincaidoneil/symmetric-encrypt.git"
   },
   "keywords": [
     "encrypt",
@@ -32,9 +32,9 @@
   "author": "Kincaid O'Neil (https://kincaidoneil.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kincaidoneil/encrypt-it/issues"
+    "url": "https://github.com/kincaidoneil/symmetric-encrypt/issues"
   },
-  "homepage": "https://github.com/kincaidoneil/encrypt-it#readme",
+  "homepage": "https://github.com/kincaidoneil/symmetric-encrypt#readme",
   "dependencies": {
     "libsodium-wrappers": "^0.7.4"
   },
