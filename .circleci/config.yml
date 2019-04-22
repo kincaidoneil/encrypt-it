@@ -29,6 +29,12 @@ jobs:
       - run:
           name: Check formatting
           command: npm run format:check
+      - run:
+          name: Run tests
+          command: npm test
+      - run:
+          name: Upload code coverage
+          command: npx codecov
       - persist_to_workspace:
           root: ~/repo
           paths: .

@@ -1,0 +1,6 @@
+{
+  "include": ["build/**/*.js"],
+  "exclude": ["**/__tests__/**/*.js", "**/*.ts"],
+  "extension": [".js"],
+  "reporter": ["text", "lcov"]
+}

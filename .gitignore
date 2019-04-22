@@ -1,2 +1,5 @@
-node_modules/
-build/
+node_modules
+build
+.nyc_output
+coverage
+.DS_Store
