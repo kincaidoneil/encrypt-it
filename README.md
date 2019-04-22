@@ -3,7 +3,7 @@
 > Password-based encryption and decryption in Node.js
 
 - AES-GCM for fast and secure symmetric encryption
-- Argon2Id for high work-factor and ASIC-resistant key derivation, using a Libsodium WASM implementation
+- Argon2Id for high work-factor and ASIC-resistant key derivation, using Libsodium compiled to WASM
 - Portable function parameters for encryption and key derivation, encoded in the output for backwards compatibility
 - Best practices such as salting, regenerating IVs for each new message, and using auth tags to enforce integrity
 - Simple API, designed to use with a separate persistence layer
