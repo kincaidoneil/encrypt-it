@@ -9,5 +9,5 @@
     "strict": true /* Enable all strict type-checking options. */,
     "esModuleInterop": true
   },
-  "include": ["./index.ts"]
+  "files": ["index.ts", "index.test.ts"]
 }

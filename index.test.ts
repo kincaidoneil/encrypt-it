@@ -1,5 +1,5 @@
 import test from 'ava'
-import { decrypt, generateEncryptionKey } from '..'
+import { decrypt, generateEncryptionKey } from '.'
 import { performance } from 'perf_hooks'
 
 test('decrypts an encrypted message', async t => {

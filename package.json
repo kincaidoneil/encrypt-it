@@ -6,11 +6,11 @@
   "types": "build/index.d.ts",
   "files": [
     "build",
-    "!build/__tests__"
+    "!build/**/*.test.*"
   ],
   "scripts": {
     "build": "tsc",
-    "test": "nyc --exclude-after-remap=false ava build/__tests__/**/*.test.js",
+    "test": "nyc --exclude-after-remap=false ava build/**/*.test.js",
     "lint": "tslint --project .",
     "format": "prettier '**/*.{js,ts,json}' --ignore-path .gitignore",
     "format:check": "npm run format -- --list-different",
